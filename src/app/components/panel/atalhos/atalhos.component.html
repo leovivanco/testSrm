@@ -1,0 +1,21 @@
+<div class="box-panel card">
+  <h4 class="tit">Atalhos</h4>
+  <div class="row">
+    <div class="col-sm-8">
+      <h5 class="sub-tit">Operacional</h5>
+      <ul class="list-itens">
+        <li class="list-item" *ngFor="let item of atalhosOpreacionais">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-4 border-left">
+      <h5 class="sub-tit">Geral</h5>
+      <ul class="list-itens">
+        <li class="list-item" *ngFor="let item of atalhosGerais">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

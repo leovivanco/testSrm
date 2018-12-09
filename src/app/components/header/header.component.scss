@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: .1rem .6rem;
+  min-height: 4.5rem;
+  .logo {
+    max-width: 140px;
+    display: inline-block;
+  }
+  .tit {
+    font-size: .7rem;
+    letter-spacing: -.0001rem;
+  }
+  .btn-visao {
+    background-color: transparent;
+    border: #84b8dd solid 1px;
+    color: #afaebb;
+    border-radius: 0;
+    font-size: 0.8rem;
+  }
+  .btn-login {
+    background-color: #02243c;
+    position: relative;
+    width: 100%;
+    max-width: 210px;
+    text-align: left;
+    border-radius: 0;
+    border: 0;
+    font-size: 0.9rem;
+    .fa-user {
+      margin-right: 3px;
+    }
+    .fa-bell {
+      background-color: #4d98cf;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      span {
+        background-color: #ef151f;
+        position: absolute;
+        border-radius: 100%;
+        font-size: .9rem;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        top: 3px;
+        right: 8px;
+      }
+    }
+  }
+  @media screen and (min-width: 810px) {
+    .no-gutters {
+      margin-top: 1rem;
+    }
+  }
+}

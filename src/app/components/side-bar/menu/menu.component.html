@@ -1,0 +1,6 @@
+<div class="menu">
+  <a href="#" class="dropdown-item" [ngClass]="{active: item.active}" *ngFor="let item of menuList">
+    <i class="fas {{item.ico}}"></i>
+    {{item.name}}
+  </a>
+</div>

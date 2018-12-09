@@ -1,0 +1,42 @@
+.menu {
+  width: 100%;
+  display: block;
+  padding: 0;
+  background-color: #02243c;
+  height: 100%;
+  .dropdown-item {
+    background-color: #02243c;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: solid 1px #4389bc;
+    transition: ease-in .3s background;
+    &:hover {
+      background-color: #fff;
+      color: #4389bc;
+    }
+    &:last-child {
+      border: 0;
+    }
+    &.active {
+      position: relative;
+      &:after {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid #fff;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+  .fas {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 2px
+  }
+}
